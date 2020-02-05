@@ -12,6 +12,7 @@ class Articles extends Component {
 
   componentDidMount() {
     this.props.onGetArticles();
+
   }
 
   onArticleClick = id => {
@@ -19,6 +20,7 @@ class Articles extends Component {
   };
 
   render() {
+    console.log(this.props.temp);
     const articles = this.props.articles;
     const selectedId = this.state.selectedId;
     return (
@@ -66,13 +68,14 @@ class Articles extends Component {
 
 const mapStateToProps = state => {
   return {
-    articles: state.articlesReducer.articles
+    articles: state.articlesReducer.articles,
+    temp: state.tempReducer.temp
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
-    onGetArticles: url => dispatch(actions.getArticles())
+    onGetArticles: url => dispatch(actions.getTemperatures())
   };
 };
 

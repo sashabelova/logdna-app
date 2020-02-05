@@ -15,33 +15,32 @@ export const fetchStart = () => {
   };
 };
 
-export const fetchSuccess = articles => {
+export const getSuccess = temp => {
   return {
-    type: actionTypes.FETCH_SUCCESS,
-    articles: articles
+    type: actionTypes.GET_SUCCESS,
+    temp: temp
   };
 };
 
-export const fetchFailed = () => {
+export const getFailed = () => {
   return {
-    type: actionTypes.FETCH_FAILED
+    type: actionTypes.GET_FAILED
   };
 };
 
-export const getArticles = () => {
+export const getTemperatures = () => {
   return dispatch => {
-    dispatch(clearArticles());
-    dispatch(fetchStart());
-    const apiEndpoint = '/articles/';
+    //dispatch(clearArticles());
+    //dispatch(fetchStart());
+    //const apiEndpoint = '/articles/';
     axios
       .get('thermostat.json')
       .then(response => {
-        //console.log(response.data)
-        dispatch(fetchSuccess(response.data));
+        dispatch(getSuccess(response.data));
       })
 
       .catch(error => {
-        dispatch(fetchFailed());
+        dispatch(getFailed());
       });
   };
 };
