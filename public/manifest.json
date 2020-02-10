@@ -1,22 +1,22 @@
 {
-  "short_name": "LogDNA app",
-  "name": "LogDNA app",
-  "description": "LogDNA App for articles view",
+  "short_name": "Thermostat app",
+  "name": "Thermostat app",
+  "description": "Thermostat app for managing temperature",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "96x96 32x32",
       "type": "image/x-icon"
     },
     {
-      "src": "favicon-192x192.png",
+      "src": "favicon-96x96.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "96x96"
     },
     {
-      "src": "favicon-512x512.png",
+      "src": "favicon-32x32.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "32x32"
     }
   ],
   "start_url": ".",

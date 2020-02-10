@@ -1,9 +1,9 @@
 header {
-  background: $c_bg url('../../img/logo.png') no-repeat 15px 50%;
+  background: $c_bg;
   background-size: 50px;
   height: 70px;
   line-height: 70px;
-  padding-left: 100px;
+  padding-left: 30px;
   border-bottom: 1px solid $c_main_border;
   @include box-shadow(0, 2px, 5px, rgba($c_lightgray, 0.7));
   position: fixed;

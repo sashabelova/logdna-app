@@ -1,11 +1,2 @@
-export const FETCH_START = 'FETCH_START';
-export const FETCH_SUCCESS = 'FETCH_SUCCESS';
-export const FETCH_FAILED = 'FETCH_FAILED';
-export const CLEAR_ARTICLES = 'CLEAR_ARTICLES';
-export const SEND_MESSAGE = 'SEND_MESSAGE';
-export const SEND_MESSAGE_FAILED = 'SEND_MESSAGE_FAILED';
-
 export const GET_SUCCESS = 'GET_SUCCESS';
 export const GET_FAILED = 'GET_FAILED';
-
-

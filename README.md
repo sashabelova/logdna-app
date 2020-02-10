@@ -14,16 +14,3 @@ Then for running:
 
 `npm start`
 
-### How to run server
-
-Clone Github repo at https://github.com/sashabelova/logdna-task-api
-
-In the API project directory run for installation:
-
-`npm install`
-
-Then for its running:
-
-`npm start`
-
-View the website at: [http://localhost:3001](http://localhost:3001).

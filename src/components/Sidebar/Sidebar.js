@@ -1,25 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const preload = {
   data: [
     {
       id: '001',
-      name: '⌘1',
+      name: 'Home',
+      url: '/',
       active: true
     },
     {
       id: '002',
-      name: '⌘2',
-      active: false
-    },
-    {
-      id: '003',
-      name: '⌘3',
-      active: false
-    },
-    {
-      id: '004',
-      name: '⌘4',
+      name: 'Chart',
+      url: '/chart',
       active: false
     }
   ]
@@ -30,7 +23,9 @@ const SidebarItems = props => {
     <ul>
       {props.items.data.map(item => (
         <React.Fragment key={item.id}>
-          <li className={item.active ? 'active' : ''}>{item.name}</li>
+          <li>
+            <Link to={item.url}>{item.name}</Link>
+          </li>
         </React.Fragment>
       ))}
     </ul>
